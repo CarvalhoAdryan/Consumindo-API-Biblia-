@@ -1,0 +1,8 @@
+<div class="card">
+    <blockquote>
+        {% for item in Livros %}
+        <ul>   
+     <a href="/nvi/{{ item.abbrev.pt }}/1">{{ item.name }}</a> -- {{ item.testament }} 
+    </ul>
+        {% endfor %}
+    </blockquote>
